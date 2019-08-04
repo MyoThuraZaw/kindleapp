@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		E37D459C22F6CED5006D001F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D459B22F6CED5006D001F /* AppDelegate.swift */; };
 		E37D459E22F6CED5006D001F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D459D22F6CED5006D001F /* ViewController.swift */; };
-		E37D45A122F6CED5006D001F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37D459F22F6CED5006D001F /* Main.storyboard */; };
 		E37D45A322F6CED6006D001F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37D45A222F6CED6006D001F /* Assets.xcassets */; };
 		E37D45A622F6CED6006D001F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37D45A422F6CED6006D001F /* LaunchScreen.storyboard */; };
+		E37D45AE22F6F047006D001F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D45AD22F6F047006D001F /* Models.swift */; };
+		E37D45B022F6FEAC006D001F /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D45AF22F6FEAC006D001F /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E37D459822F6CED5006D001F /* KindleLBTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindleLBTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37D459B22F6CED5006D001F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E37D459D22F6CED5006D001F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E37D45A022F6CED5006D001F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E37D45A222F6CED6006D001F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E37D45A522F6CED6006D001F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E37D45A722F6CED6006D001F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E37D45AD22F6F047006D001F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		E37D45AF22F6FEAC006D001F /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +58,11 @@
 			children = (
 				E37D459B22F6CED5006D001F /* AppDelegate.swift */,
 				E37D459D22F6CED5006D001F /* ViewController.swift */,
-				E37D459F22F6CED5006D001F /* Main.storyboard */,
 				E37D45A222F6CED6006D001F /* Assets.xcassets */,
 				E37D45A422F6CED6006D001F /* LaunchScreen.storyboard */,
 				E37D45A722F6CED6006D001F /* Info.plist */,
+				E37D45AD22F6F047006D001F /* Models.swift */,
+				E37D45AF22F6FEAC006D001F /* BookCell.swift */,
 			);
 			path = KindleLBTA;
 			sourceTree = "<group>";
@@ -124,7 +127,6 @@
 			files = (
 				E37D45A622F6CED6006D001F /* LaunchScreen.storyboard in Resources */,
 				E37D45A322F6CED6006D001F /* Assets.xcassets in Resources */,
-				E37D45A122F6CED5006D001F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37D45B022F6FEAC006D001F /* BookCell.swift in Sources */,
+				E37D45AE22F6F047006D001F /* Models.swift in Sources */,
 				E37D459E22F6CED5006D001F /* ViewController.swift in Sources */,
 				E37D459C22F6CED5006D001F /* AppDelegate.swift in Sources */,
 			);
@@ -143,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E37D459F22F6CED5006D001F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E37D45A022F6CED5006D001F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E37D45A422F6CED6006D001F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
