@@ -20,7 +20,7 @@ class ViewController: UITableViewController {
         
         navigationItem.title = "Kindle"
     
-        setupBooks()
+//        setupBooks()
         fetchBooks()
     }
     
@@ -34,18 +34,34 @@ class ViewController: UITableViewController {
                     return
                 }
                 
-//                print(response)
-//                print(data)
-                guard let dataX = data else { return }
+                guard let data = data else { return }
                 
-                guard let dataAsString = String(data: dataX, encoding: .utf8) else { return }
-                print(dataAsString)
-                
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+                    
+                    guard let bookDictionaries = json as? [[String: Any]] else { return }
+                    
+                    self.books = []
+                    for bookDictionary in bookDictionaries {
+                        
+                        if let title = bookDictionary["title"] as? String, let author = bookDictionary["author"] as? String {
+                            let book = Book(title: title, author: author, image:#imageLiteral(resourceName: "steve_jobs.png"), pages: [])
+                            print(title, author)
+                            
+                            self.books?.append(book)
+                            
+                        }
+                        
+                    }
+                    print("All of our books: ", self.books)
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                } catch let jsonError {
+                    print("Failed to parse JSON properly: ", jsonError)
+                }
             }).resume()
-            
-            print("Hava we fetched our books yet?")
         }
-        
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
