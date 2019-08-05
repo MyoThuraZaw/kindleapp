@@ -19,8 +19,15 @@ class ViewController: UITableViewController {
         tableView.tableFooterView = UIView()
         
         navigationItem.title = "Kindle"
-        
+    
         setupBooks()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let layout = UICollectionViewFlowLayout()
+        let bookPageController = BookPagerController(collectionViewLayout: layout)
+        let navController = UINavigationController(rootViewController: bookPageController)
+        present(navController, animated: true, completion: nil)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
