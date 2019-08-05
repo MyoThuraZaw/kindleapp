@@ -47,7 +47,6 @@ class BookPagerController: UICollectionViewController, UICollectionViewDelegateF
         let page = book?.pages[indexPath.item]
         pageCell.textLabel.text = page?.text
         
-//        indexPath.item % 2 == 0 ? (cell.backgroundColor = .red) : (cell.backgroundColor = .blue)
         return pageCell
     }
 }
