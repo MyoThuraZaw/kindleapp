@@ -14,6 +14,7 @@
 		E37D45AE22F6F047006D001F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D45AD22F6F047006D001F /* Models.swift */; };
 		E37D45B022F6FEAC006D001F /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D45AF22F6FEAC006D001F /* BookCell.swift */; };
 		E3D6CBDE22F7F038008EE715 /* BookPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D6CBDD22F7F038008EE715 /* BookPagerController.swift */; };
+		E3D6CBE022F80301008EE715 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D6CBDF22F80301008EE715 /* PageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E37D45AD22F6F047006D001F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		E37D45AF22F6FEAC006D001F /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		E3D6CBDD22F7F038008EE715 /* BookPagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPagerController.swift; sourceTree = "<group>"; };
+		E3D6CBDF22F80301008EE715 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E37D45AD22F6F047006D001F /* Models.swift */,
 				E37D45AF22F6FEAC006D001F /* BookCell.swift */,
 				E3D6CBDD22F7F038008EE715 /* BookPagerController.swift */,
+				E3D6CBDF22F80301008EE715 /* PageCell.swift */,
 			);
 			path = KindleLBTA;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				E37D45B022F6FEAC006D001F /* BookCell.swift in Sources */,
 				E3D6CBDE22F7F038008EE715 /* BookPagerController.swift in Sources */,
+				E3D6CBE022F80301008EE715 /* PageCell.swift in Sources */,
 				E37D45AE22F6F047006D001F /* Models.swift in Sources */,
 				E37D459E22F6CED5006D001F /* ViewController.swift in Sources */,
 				E37D459C22F6CED5006D001F /* AppDelegate.swift in Sources */,

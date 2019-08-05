@@ -15,7 +15,7 @@ class BookPagerController: UICollectionViewController, UICollectionViewDelegateF
         
         navigationItem.title = "Book"
         
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
+        collectionView.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
         
         let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         layout?.scrollDirection = .horizontal
@@ -34,7 +34,7 @@ class BookPagerController: UICollectionViewController, UICollectionViewDelegateF
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
-        indexPath.item % 2 == 0 ? (cell.backgroundColor = .red) : (cell.backgroundColor = .blue)
+//        indexPath.item % 2 == 0 ? (cell.backgroundColor = .red) : (cell.backgroundColor = .blue)
         return cell
     }
 }
